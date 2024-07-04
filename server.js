@@ -16,6 +16,10 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
+const authRoutes = require("./routes/authRoutes");
+
+app.use("/api", authRoutes);
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
