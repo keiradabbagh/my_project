@@ -2,6 +2,10 @@ const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
+<<<<<<< Updated upstream
+=======
+const authRole = require("./middleware/authRole");
+>>>>>>> Stashed changes
 
 const router = express.Router();
 

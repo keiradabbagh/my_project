@@ -1,5 +1,10 @@
 const jwt = require("jsonwebtoken");
+<<<<<<< Updated upstream
 const User = require("../models/User");
+=======
+const User = require("../../models/User");
+const authRole = require("../../authRole");
+>>>>>>> Stashed changes
 
 function authRole(role) {
   return async (req, res, next) => {

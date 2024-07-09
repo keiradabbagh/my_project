@@ -1,4 +1,4 @@
-const authRole = require("../middleware/authRole");
+const authRole = require("../authRole");
 
 router.get(
   "/users",
